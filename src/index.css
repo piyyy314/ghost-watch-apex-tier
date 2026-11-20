@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #050608;
+    --surface: #0f1117;
+    --surface-card: #161b22;
+    --surface-input: #010409;
+    --accent: #38bdf8;
+    --accent-dim: rgba(56, 189, 248, 0.15);
+    --border: #1e293b;
+    --border-subtle: #30363d;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+  }
+
+  body {
+    background-color: #050608;
+    color: #f1f5f9;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.terminal-text {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Subtle CRT scanline effect */
+.scan-line {
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(0deg, transparent 0%, rgba(56, 189, 248, 0.12) 50%, transparent 100%);
+  position: absolute;
+  top: -100px;
+  left: 0;
+  pointer-events: none;
+  animation: scan 9s linear infinite;
+  opacity: 0.25;
+}
+
+@keyframes scan {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* Custom Scrollbar for cyber aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090b10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+.glow-sky {
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.18);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.22);
+}
+
+.glow-rose {
+  box-shadow: 0 0 14px rgba(244, 63, 94, 0.25);
+}

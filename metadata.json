@@ -1,0 +1,6 @@
+{
+  "name": "Ghost-Watch C2 // Tactical Operations Workstation",
+  "description": "Tactical Network Operations & Strategic Cryptographic Workstation with SIGINT DNS interceptor, RF spectrum analyzer, DSSS simulator, and SatCom diagnostics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
